@@ -1,0 +1,39 @@
+/*
+Admin dashboard
+
+Search prompt
+
+Buttons on the left hand side for 
+  New
+  Upload
+  Share
+  
+nav panel
+    Home
+    Profile
+    Messages
+    Tasks
+    Settings
+    Support
+    Privacy
+
+Projects
+    A Projects
+    Cool Project
+    Even Cooler Project
+    Super Cool Project
+    Ultra Project
+
+Announcements on the side panel
+    Community Projects
+    Maintenance
+    Privacy Policy
+
+Trending
+    Names of people...
+
+
+
+
+
+*/

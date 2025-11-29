@@ -1,0 +1,134 @@
+.container {
+    display:grid;
+    align-items: stretch;
+    font-size: 20px;
+    grid-template-columns:200px repeat(2, 1fr) 175px;
+    grid-template-rows: 100px repeat(5,1fr);
+    grid-template-areas: 
+        "nav header header header"
+        "nav main main ."
+        "nav main main sidebar"
+}
+
+h1 {
+    grid-row: 1;
+    font-size: 16px;
+    grid-area: h1;
+    padding-left: 10px;
+}
+
+.paragraph {
+    font-size: 14px;
+    padding-left: 10px;
+    grid-area: paragraph;
+}
+
+.header_button {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 4/3;
+    justify-self: end;
+}
+
+.additional_references {
+    margin-top: 20px;
+}
+
+.nav {
+    grid-column: 1;
+    grid-row: 1/end;
+    padding: 20px;
+    line-height: 1.5;
+    border: .5px solid black;
+    border-color: black;
+    background-color: lightblue;
+}
+
+.menus {
+    display: grid;
+    position: fixed;
+}
+
+.main {
+    grid-column: 2/4;
+    grid-row: 2/end;
+    padding: 20px;
+}
+
+.additional_references {
+    grid-column: 4/5;
+    grid-row: 2/4;
+}
+
+.sidebar {
+    grid-column: 4/5;
+    grid-row: 2/end;
+    align-self: end;
+}
+
+.button {
+    float: right;
+    justify-self: bottom end;
+    align-self: end;
+    border-radius: 10px;
+    border-color: red;
+    background-color: aqua;
+}
+
+.header {
+    grid-area: header;
+    justify-content: start;
+    background-color: lightskyblue;
+    border: .5px solid aliceblue;
+    border-bottom: 3px solid blue;
+}
+
+.project_area {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-areas:
+    "project_title"
+    "project_page project_page"
+    "project_page project_page "
+    "project_page project_page ";
+}
+
+.project_title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: start;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.project_page {
+    display: grid;
+    font-size: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px dashed gray;
+    text-align: left;
+    grid-template-areas:
+    "h1 h1"
+    "paragraph paragraph"
+    "paragraph paragraph"
+    "paragraph paragraph";
+
+}
+
+input {
+    display: grid;
+    grid-column: 1/3;
+    justify-content: left;
+    width: 300px;
+    height: 20px;
+    border-radius: 15px;
+    grid-row-gap: 15px;;
+}
+
+.input-area {
+    display: grid;
+
+}
